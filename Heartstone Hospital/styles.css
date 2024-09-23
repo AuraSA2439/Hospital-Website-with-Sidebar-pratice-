@@ -462,6 +462,8 @@ a {
 
 .textfield a:hover, .textfield:active {
     color: #D6DDEA;
+	border-bottom: 1px solid #D6DDEA;
+    transition: all ease-in-out 0.3s;
 }
 
 .rows {
