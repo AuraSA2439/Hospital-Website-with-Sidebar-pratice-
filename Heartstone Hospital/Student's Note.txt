@@ -1,0 +1,6 @@
+Fungsi javascript:
+
+1. Rule untuk sidemenu. Misalnya jika satu tombol aktif maka tombol lain akan di non-aktifkan dsb.
+2. Fungsi untuk popup-popin sidemnu dengan menggunakan tombol.
+3. Fungsi untuk membuat slideshow image yang interaktif. Image dapat di tukar dengan tombol dot 
+	yang ada di bawah image.

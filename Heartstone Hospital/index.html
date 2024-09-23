@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css2?family=Asap' rel='stylesheet'>
+    <title>Heartstone Hospital</title>
+</head>
+
+<body>
+<!-- Maaf mas/mba, tapi header nya ngak bisa dilepas langsung. Soal nya sidemenu itu akan ngeefek ke semua 
+part dalam web ketika popin-popup.  -->
+<!-- Juga kalo boleh, bisa deksripsikan lagi lebih detail mana yang diubah jikalau submission ini di tolak
+lagi? Terima kasih. -->
+  <section class="page">
+    <header class="navbar-container">
+      <div class="logo">
+        <img src="Assets/logo1.png" alt="Logo">
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#statusbar">Status Bar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="slideshow-container">
+      
+        <div class="slides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Assets/background1.jpg" style="width:100%">
+        </div>
+      
+        <div class="slides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Assets/background2.jpg" style="width:100%">
+        </div>
+      
+        <div class="slides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Assets/background3.jpg" style="width:100%">
+        </div>
+  
+      </section>
+      <br>
+      
+      <!-- The dots/circles -->
+      <section style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </section>
+      
+      <section class="sematic">
+        <!-- Konten artikel -->
+        <div id="content">
+          <article id="about" class="card">
+            <h2>About Us</h2>
+            <p>
+              At Heartstone Hospital, we are committed to delivering compassionate, patient-centered healthcare 
+              to our community. Founded on the principles of excellence, integrity, and innovation, Heartstone 
+              is more than just a medical facility—it's a place where patients and their families are treated 
+              with the utmost care, respect, and kindness.
+            </p>
+        
+            <p>
+              Our dedicated team of highly skilled physicians, nurses, and support staff work collaboratively 
+              to provide a full spectrum of medical services, from emergency care and advanced surgeries to 
+              specialized treatments and preventive care. At the core of our mission is the belief that healing 
+              encompasses not just the body, but the mind and spirit as well. That's why we focus on creating a 
+              nurturing environment, equipped with state-of-the-art technology and modern facilities, to ensure 
+              our patients receive the best care possible.
+            </p>
+
+            <p>
+              As a trusted healthcare partner, Heartstone Hospital continually strives to exceed expectations 
+              through continuous improvement, research, and innovation. Whether you are here for a routine visit 
+              or complex treatment, we are dedicated to guiding you on your journey to health and wellness with 
+              the warmth and expertise you deserve.
+            </p>
+
+            <p class="bold">
+              Welcome to Heartstone Hospital, where your heart’s health is our greatest priority.
+            </p>
+
+          </article>
+      
+          <article id="facility" class="card">
+            <h2>Facilities</h2>
+            <p>
+              At Heartstone Hospital, we provide a comprehensive range of medical services designed to meet the 
+              needs of our diverse community. Our state-of-the-art facility is equipped with advanced technology 
+              and staffed by highly trained professionals, ensuring the highest quality of care across every 
+              department.
+            </p>
+        
+            <ol class="bold">
+              <li>
+                Emergency and Urgent Care
+              </li>
+              <ul class="medium">
+                <li>
+                  24/7 Emergency Room with rapid response teams
+                </li>
+                <li>
+                  Urgent care for non-life-threatening conditions
+                </li>
+                <li>
+                  Trauma care for accidents and critical injuries
+                </li>
+              </ul>
+              <li>
+                Cardiology and Heart Care
+              </li>
+              <ul class="medium">
+                <li>
+                  Diagnostic and interventional cardiology
+                </li>
+                <li>
+                  Cardiac catheterization and angioplasty
+                </li>
+                <li>
+                  Heart failure management and rehabilitation
+                </li>
+                <li>
+                  Electrophysiology services for heart rhythm disorders
+                </li>
+                <li>
+                  Comprehensive heart health checkups and preventive care
+                </li>
+              </ul>
+              <li>
+                Surgical Services
+              </li>
+              <ul class="medium">
+                <li>
+                  General surgery, including minimally invasive procedures
+                </li>
+                <li>
+                  Orthopedic surgery, joint replacement, and sports injury repair
+                </li>
+                <li>
+                  Cardiovascular and thoracic surgery
+                </li>
+                <li>
+                  Bariatric surgery for weight loss
+                </li>
+                <li>
+                  Robotic-assisted surgeries for precision care
+                </li>
+              </ul>
+            </ol>
+
+            <p class="bold">...And many others...</p>
+
+            <p>
+              At Heartstone Hospital, we strive to ensure that every patient receives personalized care tailored 
+              to their specific needs. Whether it’s routine health maintenance or complex medical treatment, we 
+              are dedicated to providing the best in healthcare for you and your family.
+            </p>
+          </article>
+      
+          <article id="appoint" class="card">
+            <h2>Contact</h2>
+            <p>
+              At Heartstone Hospital, we aim to make the appointment process as convenient and straightforward 
+              as possible. You can schedule an appointment in a variety of ways:
+            </p>
+            <ol class="bold">
+              <li>
+                Online Appointment Booking
+              </li>
+              <ul class="medium">
+                <li>
+                  Visit our website and navigate to the “Appointments” section.
+                </li>
+                <li>
+                  Select the service or department you need (e.g., cardiology, pediatrics, surgery).
+                </li>
+                <li>
+                  Choose your preferred doctor, date, and time from the available slots.
+                </li>
+                <li>
+                  Fill in your personal information and confirm your appointment.
+                </li>
+                <li>
+                  You will receive a confirmation email or SMS with your appointment details.
+                </li>
+              </ul>
+              <li>
+                Call Our Appointment Line
+              </li>
+              <ul class="medium">
+                <li>
+                  Call our dedicated appointment hotline at (123) 456-7890.
+                </li>
+                <li>
+                  Our team is available Monday to Friday, 8 AM to 6 PM, to assist you with booking an appointment.
+                </li>
+                <li>
+                  Let our staff know which department or doctor you wish to see, and they will help find a suitable time.
+                </li>
+              </ul>
+              <li>
+                Mobile App
+              </li>
+              <ul class="medium">
+                <li>
+                  Download the Heartstone Hospital mobile app from the App Store or Google Play.
+                </li>
+                <li>
+                  Use the app to browse services, view doctor profiles, and schedule an appointment.
+                </li>
+                <li>
+                  Receive reminders and updates directly on your phone.
+                </li>
+              </ul>
+              <li>
+                In-Person
+              </li>
+              <ul class="medium">
+                <li>
+                  Visit our hospital and stop by the reception or patient services desk.
+                </li>
+                <li>
+                  Our friendly staff will assist you in booking an appointment at a time convenient for you.
+                </li>
+              </ul>
+              <li>
+                Referral Appointments
+              </li>
+              <ul class="medium">
+                <li>
+                  If you have a referral from another healthcare provider, we can assist in coordinating your 
+                  appointment. Call our referral coordination team at (123) 456-7891 or bring your referral letter to the hospital.
+                </li>
+              </ul>
+            </ol>
+            <section class="what-to-bring bold">
+              <h3>What to Bring to Your Appointment:</h3>
+              <ul>
+                <li>
+                  Photo ID
+                </li>
+                <li>
+                  Insurance information (if applicable)
+                </li>
+                <li>
+                  Medical records or referral documents (if applicable)
+                </li>
+              </ul>
+            </section>
+
+            <p>
+              At Heartstone Hospital, your health and convenience are our top priorities. If you need any assistance or have questions, feel free to reach out to us!
+            </p>
+
+          </article>
+        </div>
+      
+        <!-- Konten samping -->
+        <aside>
+
+          <div class="aside-img-container">
+            <img src="Assets/asidepic.jpg" alt="Current Queque">
+          </div>
+
+          <div class='statusbar card' id="statusbar">
+            <div class="textfield" id='consult'>
+              <span class="material-icons">history</span>
+              <div class="lg">Today's Consultations</div>
+            </div>
+            <div class="wraps">
+              <div class="rows small">
+                <div class="sm">11:55:03</div>
+                <div class="tag small_tag Grey">
+                  <div class="sm">Orthopedic</div>
+                </div>
+              </div>
+              <div class="rows small">
+                <div class="sm">11:46:08</div>
+                <div class="tag small_tag Grey">
+                  <div class="sm">Optic</div>
+                </div>
+              </div>
+              <div class="rows small">
+                <div class="sm">11:41:56</div>
+                <div class="tag small_tag Grey">
+                  <div class="sm">Neuro</div>
+                </div>
+              </div>
+              <div class="rows small">
+                <div class="sm">11:39:30</div>
+                <div class="tag small_tag Grey">
+                  <div class="sm">Pediatrics</div>
+                </div>
+              </div>
+            </div>
+            <div class="textfield base">
+              <a href="#">See more...</a>
+            </div>
+          </div>
+
+          <div class='statusbar card' id="statusbar">
+            <div class="textfield" id="operate">
+              <span class="material-icons">history</span>
+              <div class="lg">Today's Operations</div>
+            </div>
+            <div class="wraps">
+              <div class="rows small">
+                <div class="sm">11:50:00</div>
+                <div class="tag small_tag Green">
+                  <div class="sm">Normal</div>
+                </div>
+              </div>
+              <div class="rows small">
+                <div class="sm">09:30:00</div>
+                <div class="tag small_tag Red">
+                  <div class="sm">CITO</div>
+                </div>
+              </div>
+              <div class="rows small">
+                <div class="sm">09:12:00</div>
+                <div class="tag small_tag Green">
+                  <div class="sm">Normal</div>
+                </div>
+              </div>
+              <div class="rows small">
+                <div class="sm">17:07:00</div>
+                <div class="tag small_tag Red">
+                  <div class="sm">CITO</div>
+                </div>
+              </div>
+            </div>
+            <div class="textfield base">
+              <a href="#">See more...</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+    </main>
+    <footer>
+      <p>Aura Sukma Aulia &#169; 2024, Heartstone Hospital</p>
+    </footer>
+  </section>
+
+  <aside class="contain">
+    <div class="sidemenu">
+      <div class="popup-btn">
+        <span class="material-icons">start</span>
+      </div>
+      <div class="account">
+        <a href="#">
+          <div class="account-img">
+            <img src="Assets/user.jpg" alt="User">
+          </div>
+          <div class="account-details">
+            <div class="title">User</div>
+            <div class="name">Aura SA</div>
+          </div>
+        </a>
+      </div>
+      <div class="navigation">
+        <div class="menu">
+          <p class="title">MAIN</p>
+          <ul>
+            <li class="active">
+              <a href="#">
+                <span class="material-icons">dashboard</span>
+                <div class="txt">Dashboard</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-icons">analytics</span>
+                <div class="txt">CRUD</div>
+                <span class="material-icons dropicon">keyboard_arrow_down</span>
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="#">
+                    <div class="txt">Patient</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="txt">Doctor</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="menu">
+          <p class="title">SETTING</p>
+          <ul>
+            <li>
+              <a href="#">
+                <span class="material-icons">settings</span>
+                <div class="txt">Setting</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu">
+        <p class="title">ACCOUNT</p>
+        <ul>
+          <li>
+            <a href="#">
+              <span class="material-icons">logout</span>
+              <div class="txt">Logout</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+</body>
+<!-- Javascript -->
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+crossorigin="anonymous">
+</script>
+<script src="script.js"></script>
+</html>
